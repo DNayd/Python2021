@@ -1,7 +1,7 @@
-number = int(input('Введите целое число'))
-if number <= 2:
+x = int(input('Введите целое число'))
+if x <= 2:
     print('Введите число больше 2')
-number -= 1
+x -= 1
 
 def primenumb(n):
     for i in range(2, n):
@@ -9,9 +9,9 @@ def primenumb(n):
             return 0
     return 1
 
-while number >= 2:
-    if primenumb(number) == 1:
-        print('Максимальное целое, которое меньше заданного =', number)
+while x >= 2:
+    if primenumb(x) == 1:
+        print('Максимальное целое, которое меньше заданного =', x)
         break
     else:
-        number -= 1
+        x -= 1
