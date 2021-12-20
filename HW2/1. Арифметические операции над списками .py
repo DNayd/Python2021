@@ -39,19 +39,19 @@ for i in range(len(lists)):
 lists = np.array(lists)
 
 if action == '1':
-  print(calc(lists, add))
+  print('Ваш ответ: %.2f' % (calc(lists, add)))
 elif action == '2':
-  print(calc(lists, sub))
+  print('Ваш ответ: %.2f' % (calc(lists, sub)))
 elif action == '3':
-  print(calc(lists, mul))
+  print('Ваш ответ: %.2f' % (calc(lists, mul)))
 elif action == '4':
-  print(calc(lists, truediv))
+  print('Ваш ответ: %.2f' % (calc(lists, truediv)))
 elif action == '5':
-  print(power(lists, int(input('Степень: '))))
+  print('Ваш ответ: %.2f' % (power(lists, int(input('Степень: ')))))
 elif action == '6':
-  print(sqrt(lists, int(input('Степень корня: '))))
+  print('Ваш ответ: %.2f' % (sqrt(lists, int(input('Степень корня: ')))))
 elif action == '7':
-  print(log(lists))
+  print('Ваш ответ: %.2f' % (log(lists)))
 else:
   print('Ошибка ввода')
 
