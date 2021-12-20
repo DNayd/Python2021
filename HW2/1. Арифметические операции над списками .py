@@ -36,7 +36,6 @@ for i in range(x):
 for i in range(len(lists)):
     while len(lists[i]) < len(max(lists, key=len)):
         lists[i].append(0)
-print(lists)
 lists = np.array(lists)
 
 if action == '1':
