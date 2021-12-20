@@ -47,11 +47,11 @@ elif action == '3':
 elif action == '4':
   print('Ваш ответ: %.2f' % (calc(lists, truediv)))
 elif action == '5':
-  print('Ваш ответ: %.2f' % (power(lists, int(input('Степень: ')))))
+  print('Ваш ответ:', (power(lists, int(input('Степень: ')))))
 elif action == '6':
-  print('Ваш ответ: %.2f' % (sqrt(lists, int(input('Степень корня: ')))))
+  print('Ваш ответ:', (sqrt(lists, int(input('Степень корня: ')))))
 elif action == '7':
-  print('Ваш ответ: %.2f' % (log(lists)))
+  print('Ваш ответ:', (log(lists)))
 else:
   print('Ошибка ввода')
 
