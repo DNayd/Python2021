@@ -1,15 +1,18 @@
 class Sequence:
-
+  
   def __init__(self, name, seq):
     self.name = name
     self.seq = seq
-    def name ( self ) :
-      return self.name
-    def seq ( self ) :
-      return self.seq
-    def length (self) :
-      length=len(seq)
-      return length
+    
+  def name ( self ) :
+    return self.name
+  
+  def seq ( self ) :
+    return self.seq
+  
+  def length (self) :
+    length=len(seq)
+    return length
 
 class DNA(Sequence):
   name='DNA'
