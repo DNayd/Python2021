@@ -28,9 +28,9 @@ class DNA(Sequence):
 
   def Mol(self):
     m = 347 * self.seq.count(self.alphabet[0]) +\
-    320.2 * self.seq.count(self.alphabet[1]) +\
+    323.2  * self.seq.count(self.alphabet[1]) +\
     363.2 * self.seq.count(self.alphabet[2]) +\
-    323.2 * self.seq.count(self.alphabet[3])
+    320.2 * self.seq.count(self.alphabet[3])
     print('Молекулярная масса - ',round(m,2))
 
   def complementary(self):
@@ -66,7 +66,8 @@ class RNA(Sequence):
     print(alphabet[i],' - ',stat)
 
   def Mol(self):
-    m = 347 * self.seq.count(self.alphabet[0]) + 324.2 * self.seq.count(self.alphabet[1]) + 363.2 * self.seq.count(self.alphabet[2]) + 323.2 * self.seq.count(self.alphabet[3])
+    m = 347 * self.seq.count(self.alphabet[0]) + 323.2 * self.seq.count(self.alphabet[1]) +\
+    363.2 * self.seq.count(self.alphabet[2]) + 324.2 * self.seq.count(self.alphabet[3])
     print('Молекулярная масса - ', round(m,2))
 
   def Translation(self):
