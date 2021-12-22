@@ -94,7 +94,8 @@ class RNA(Sequence):
 
 class Protein(Sequence):
   name = 'Protein'
-  alphabet = ['G', 'L', 'Y', 'S','E', 'Q', 'D', 'N','F', 'A', 'K', 'R', 'H', 'C', 'V', 'P','W', 'I', 'M','T']
+  alphabet = ['A', 'R', 'N', 'D', 'V', 'H', 'G', 'Q', 'E', 'I', 'L',
+  'K', 'M', 'P', 'S', 'Y', 'T', 'W', 'F', 'C']
 
   def __init__(self,seq,):
     super().__init__(Sequence,seq)
