@@ -34,7 +34,7 @@ class DNA(Sequence):
     print('Молекулярная масса - ',round(m,2))
 
   def complementary(self):
-    comp = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C'}
+    comp = {'A': 'T', 'C': 'G', 'G': 'C', 'T': 'A',}
     comp_seq = ''
     for i in self.seq:
       comp_seq += comp[i]
@@ -46,12 +46,12 @@ class DNA(Sequence):
     for i in range(0, len(self.seq)):
       if self.seq[i] == 'A':
         tran.append('U')
-      elif self.seq[i] == 'T':
-        tran.append('A')
-      elif self.seq[i] == 'G':
-        tran.append('C')
       elif self.seq[i] == 'C':
         tran.append('G')
+      elif self.seq[i] == 'G':
+        tran.append('C')
+      elif self.seq[i] == 'T':
+        tran.append('A')
       print('Транскрипция - ', tran)
 
 
